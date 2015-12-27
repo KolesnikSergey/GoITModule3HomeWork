@@ -30,3 +30,33 @@ public class File {
         this.name = name;
     }
 }
+
+public class AudioFile extends File {
+    public AudioFile(String name) {
+        super(name);
+    }
+}
+
+public class TextFile extends File {
+    public TextFile(String name) {
+        super(name);
+    }
+}
+
+public class VideoFile extends File {
+    public VideoFile(String name) {
+        super(name);
+    }
+}
+
+public class Directory {
+    File files[];
+
+    public File[] getFiles() {
+        return files;
+    }
+
+    public void setFiles(File[] files) {
+        this.files = files;
+    }
+}
