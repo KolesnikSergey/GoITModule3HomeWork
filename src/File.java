@@ -1,11 +1,9 @@
-package files_pack;
-
 /**
  * Created by kolesnik_s on 27.12.15.
  */
-public class File {
-    String name;
-    byte data[];
+public abstract class File {
+    private String name;
+    private byte data[];
 
     public File() {
     }
@@ -31,26 +29,26 @@ public class File {
     }
 }
 
-public class AudioFile extends File {
+class AudioFile extends File {
     public AudioFile(String name) {
         super(name);
     }
 }
 
-public class TextFile extends File {
+class TextFile extends File {
     public TextFile(String name) {
         super(name);
     }
 }
 
-public class VideoFile extends File {
+class VideoFile extends File {
     public VideoFile(String name) {
         super(name);
     }
 }
 
-public class Directory {
-    File files[];
+class Directory {
+    private File files[];
 
     public File[] getFiles() {
         return files;

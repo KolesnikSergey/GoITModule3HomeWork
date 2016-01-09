@@ -1,11 +1,9 @@
-package bouquet_pack;
-
 /**
  * Created by kolesnik_s on 27.12.15.
  */
-public class Flower {
+public abstract class Flower {
 
-    String name;
+    private String name;
 
     public Flower() {
     }
@@ -23,32 +21,32 @@ public class Flower {
     }
 }
 
-public class Aster extends Flower{
+class Aster extends Flower{
     public Aster() {
         super("Aster");
     }
 }
 
-public class Tulip extends Flower {
+class Tulip extends Flower {
     public Tulip() {
         super("Tulip");
     }
 }
 
-public class Сhamomile extends Flower{
+class Сhamomile extends Flower{
     public Сhamomile() {
         super("Сhamomile");
     }
 }
 
-public class Rose extends Flower {
+class Rose extends Flower {
     public Rose() {
         super("Rose");
     }
 }
 
-public class ShrubRoses {
-    Rose shrub[];
+class ShrubRoses {
+    private Rose shrub[];
 
     public ShrubRoses() {
     }

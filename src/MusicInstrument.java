@@ -1,10 +1,8 @@
-package music_pack;
-
 /**
  * Created by kolesnik_s on 27.12.15.
  */
-public class MusicInstrument {
-    String name;
+public abstract class MusicInstrument {
+    private String name;
 
     public MusicInstrument() {
     }
@@ -22,26 +20,26 @@ public class MusicInstrument {
     }
 }
 
-public class Guitar extends MusicInstrument {
+class Guitar extends MusicInstrument {
     public Guitar() {
         super("Guitar");
     }
 }
 
-public class Trumpet extends MusicInstrument {
+class Trumpet extends MusicInstrument {
     public Trumpet() {
         super("Trumpet");
     }
 }
 
-public class Piano extends MusicInstrument {
+class Piano extends MusicInstrument {
     public Piano() {
         super("Piano");
     }
 }
 
-public class MusicStore {
-    MusicInstrument instrument[];
+class MusicStore {
+    private MusicInstrument instrument[];
 
     public MusicStore() {
     }
